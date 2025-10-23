@@ -1,0 +1,231 @@
+/* ===== Reset and Base Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  text-transform: uppercase;
+}
+
+img {
+  width: 125px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+button,
+input {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+button {
+  background: none;
+  cursor: pointer;
+}
+
+input {
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  width: 90%;
+  padding: 1.25rem 1.875rem;
+  text-transform: none;
+  display: block;
+}
+
+label {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 0.625rem;
+  text-transform: none;
+}
+
+.unclickable {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* ===== Layout Sections ===== */
+.player-names,
+.container,
+.the-winner {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.6s ease-in-out;
+}
+
+.name-box {
+  width: 850px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.intro {
+  text-align: center;
+  font-size: 3.75rem;
+  color: #fff;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.submit-names {
+  background: #c7365f;
+  font-size: 1.125rem;
+  padding: 0.9375rem 1.875rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 0.9375rem;
+  align-self: center;
+}
+
+.submit-names:hover {
+  transform: scale(1.1);
+  transition: transform 0.25s ease-in-out;
+}
+
+.the-winner {
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  padding-top: 6.25rem;
+}
+
+.winner-box {
+  text-align: center;
+  background: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 1.5625rem;
+  margin: auto;
+}
+
+.winner-text {
+  font-size: 1.625rem;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+/* ===== Game Box ===== */
+.game-box {
+  display: flex;
+  width: 1100px;
+  position: absolute;
+}
+
+.player {
+  width: 50%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.125rem 1.875rem;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.player-1 {
+  background: rgba(255, 255, 255, 0.6);
+  border-top-left-radius: 0.9375rem;
+  border-bottom-left-radius: 0.9375rem;
+}
+
+.player-2 {
+  background: rgba(255, 255, 255, 0.6);
+  border-top-right-radius: 0.9375rem;
+  border-bottom-right-radius: 0.9375rem;
+}
+
+.player-heading {
+  font-size: 2.375rem;
+  margin-bottom: 1.25rem;
+  text-transform: none;
+}
+
+.player-score {
+  color: #c7365f;
+  font-size: 6.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.current {
+  width: 210px;
+  padding: 1.25rem;
+  text-align: center;
+  background: #c7365f;
+  color: #fff;
+  border-radius: 0.9375rem;
+  margin-top: 6.25rem;
+}
+
+.current-text {
+  font-size: 1.0625rem;
+  margin-bottom: 0.625rem;
+  display: block;
+}
+
+.current-score {
+  font-size: 2.1875rem;
+}
+
+/* ===== Buttons ===== */
+
+button {
+  transition: transform 0.1s ease-in-out;
+}
+
+.new-game,
+.new-game-2,
+.roll-dice,
+.hold {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 3.125rem;
+  padding: 0.625rem 0.9375rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.buttons {
+  position: relative;
+  top: 0;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons-below button {
+  display: block;
+  margin: 1.25rem auto;
+}
+
+button:active {
+  transform: translateY(5px);
+}
