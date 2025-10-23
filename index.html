@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Roll Game</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/0728b8f4d3.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles3.css" />
+  </head>
+
+  <body>
+    <!-- Player Name Input Section -->
+    <section class="player-names">
+      <div class="name-box">
+        <div class="intro">
+          <h1 class="welcome">The Dice Roll Game</h1>
+          <img src="no bg dice.png" alt="Dice illustration" />
+        </div>
+        <form class="inputs">
+          <label for="PlayerOneName">Enter Name for Player 1</label>
+          <input
+            type="text"
+            id="PlayerOneName"
+            name="PlayerOneName"
+            placeholder="(Optional)"
+            maxlength="20"
+            autocomplete="off"
+          />
+
+          <label for="PlayerTwoName">Enter Name for Player 2</label>
+          <input
+            type="text"
+            id="PlayerTwoName"
+            name="PlayerTwoName"
+            placeholder="(Optional)"
+            maxlength="20"
+            autocomplete="off"
+          />
+
+          <button type="button" class="submit-names">Let's Play!</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Game Section -->
+    <main class="container">
+      <div class="game-box">
+        <!-- Player 1 -->
+        <div class="player player-1">
+          <h2 class="player-heading player1-name">Player 1</h2>
+          <p class="player-score">0</p>
+          <div class="current">
+            <span class="current-text">Current</span>
+            <span class="current-score">0</span>
+          </div>
+        </div>
+
+        <!-- Player 2 -->
+        <div class="player player-2 unclickable">
+          <h2 class="player-heading player2-name">Player 2</h2>
+          <p class="player-score">0</p>
+          <div class="current">
+            <span class="current-text">Current</span>
+            <span class="current-score">0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game Controls -->
+      <div class="buttons">
+        <button class="new-game">
+          <i class="fa-solid fa-rotate-right" style="color: #74c0fc"></i>
+          New Game
+        </button>
+
+        <img src="" class="dice" />
+
+        <div class="buttons-below">
+          <button class="roll-dice">🎲 Roll Dice</button>
+          <button class="hold">📥 Hold</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Winner Announcement -->
+    <section class="the-winner">
+      <div class="winner-box">
+        <h1 class="winner-text">
+          <span class="insert-winner"></span> has won the game!
+        </h1>
+        <button class="new-game-2">
+          <i class="fa-solid fa-rotate-right" style="color: #74c0fc"></i>
+          New Game?
+        </button>
+      </div>
+    </section>
+
+    <!-- Game Script -->
+    <script src="script3.js" defer></script>
+  </body>
+</html>
